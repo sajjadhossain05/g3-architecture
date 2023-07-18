@@ -90,11 +90,21 @@ nav li a:hover {
     margin-top: 50px;
 }
 
+
+
+
+
+
+
+
 /* main section */
 main {
     max-width: 1435px;
     margin: 70px auto;
 }
+
+
+
 
 /* team section */
 .team-container {
@@ -133,8 +143,6 @@ main {
     font-weight: 700;
 }
 
-/* team taitle style end */
-
 .team-discription {
     color: #727272;
     font-size: 1rem;
@@ -146,45 +154,165 @@ main {
     margin-top: 32px;
 }
 
+
+
+
+/* features-section */
+.features-section{
+    display: flex;
+    margin-top: 130px;
+    gap: 145px;
+}
+
+.features-cards {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 32px;
+    margin-top: 35px;
+    margin-bottom: 16px;
+}
+
+.features-content .features-title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-content .features-discription {
+    color: #727272;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 24px;
+}
+
+.features-cards .features-card-title {
+    color: #151515;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+
+.features-cards .features-card-disprition {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.features-img img{
+    border-radius: 15px;
+}
+
+.Experience-box {
+    background-color: #FF900E;
+    color: #FFF;
+    width: 270px;
+    text-align: center;
+    padding: 45px 42px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 130px;
+    right: 100px;
+}
+
+.Experience-box h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.Experience-box p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
 /* fects card section */
 .facts-title {
     color: #131313;
     font-size: 2.1rem;
     font-weight: 700;
-    margin-top: 150px;
 }
-.facts-discription{
+
+.facts-discription {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
     margin-top: 20px;
 }
-.cards-container{
+
+.cards-container {
     display: flex;
     justify-content: space-around;
     text-align: center;
     margin-top: 100px;
 }
-.cards-container .fect-cardes{
+
+.cards-container .fect-cardes {
     border: 1px solid #FF900E;
     border-radius: 8px;
 }
 .fect-cardes{
     padding: 35px 35px;
 }
-.fect-cards-tittle{
+
+.fect-cards-tittle {
     font-size: 2.813rem;
     color: #424242;
     font-weight: 600;
 }
-.fect-cards-discription{
+
+.fect-cards-discription {
     font-size: 1rem;
     color: #727272;
     font-weight: 600;
 }
 
-/* media responsiv section */
 
+
+/* sponosor section */
+
+.sponsor-section {
+    margin-top: 165px;
+}
+
+.sponsor-text h2 {
+    color: #131313;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sponsor-text p {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 24px;
+
+}
+.sponsor-company-logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* footer section */
+footer{
+    max-width: 1435px;
+    margin: 100px auto;
+    text-align: center;
+    background-color: #FFF4E7;
+    border: 1px solid #f9e8d3;
+    padding: 38px 0px;
+}
+
+
+
+
+/* media responsiv section */
 
 /* media mobile responsiv */
 @media screen and (max-width: 576px) {
@@ -245,7 +373,45 @@ main {
         padding: 0 20px;
         text-align: center;
     }
+    /* feature section */
 
+    .features-section{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .Experience-box{
+        position: static;
+        margin: 0 auto;
+    }
+    .features-img img{
+        width: 100%;
+    }
+
+    /* fects cards section */
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .facts-discription,
+    .facts-title {
+        text-align: center;
+    }
+
+    .fect-cardes {
+        margin: 0 30px;
+    }
+    .sponsor-company-logo{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .sponsor-company-logo img{
+        width: 100px;
+    }
+    footer{
+        max-width: 100%;
+    }
 }
 
 /* media tablet and midium device responsiv */

@@ -82,71 +82,27 @@ nav li a:hover{
 .banner-img {
     width: 100%;
     margin-top: 20px;
-}
-
-@media screen and (max-width: 576px) {
-    nav {
-        flex-direction: column;
-
-    }
-
-    header {
-        padding: 10px;
-    }
-
-    nav li {
-        margin-right: 20px;
-        margin-top: 15px;
-    }
-
-    nav li a {
-        font-size: 1rem;
-    }
-
-    .banner-title {
-        color: #131313;
-        font-size: 3rem;
-        font-weight: 700;
-    }
-
-    .banner-discription {
-        font-size: 0.9rem;
-    }
-
-    .button-praimary {
-        padding: 15px 18px;
-        font-size: 1rem;
-        font-weight: 300;
-
-    }
-
-}
-
-@media screen and (min-width: 576px) and (max-width: 960px) {
-    nav {
-        flex-direction: column;
-    }
-
-    header {
-        padding: 30px;
-    }
+    border-radius: 10px;
 }
 
 /* main style */
+/* main section */
 main {
     max-width: 1435px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 .features-container {
     display: flex;
     align-items: center;
+    
 }
 
 .features-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 1.5rem;
+    border-radius: 10px;
 }
 
 .features-text {
@@ -180,4 +136,91 @@ main {
 }
 .features-btn{
     margin-top: 32px;
+}
+
+
+
+
+
+
+
+
+/* media responsiv section */
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav li {
+        margin-right: 20px;
+        margin-top: 15px;
+    }
+
+    nav li a {
+        font-size: 1rem;
+    }
+
+    .banner-title {
+        color: #131313;
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+
+    .banner-discription {
+        font-size: 0.9rem;
+    }
+
+    .button-praimary {
+        padding: 15px 18px;
+        font-size: 1rem;
+        font-weight: 300;
+
+    }
+    /* features section */
+
+    .features-container{
+        flex-direction: column-reverse;
+    }
+    .features-img{
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+
+    }
+    .features-btn{
+        text-align: center;
+        margin-top: 15px;
+    }
+    .features-text {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 30px;
+    }
+    /* feature section */
+    .features-container{
+        flex-direction: column-reverse;
+    }
+    .features-btn{
+        text-align: center;
+    }
+    .features-img{
+        gap: 5px;
+        margin-top: 1.25rem;
+    }
+  
 }

@@ -3,9 +3,10 @@
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
 /* shared alinments */
 
-.button-praimary{
+.button-praimary {
     color: #fff;
     background-color: #FF900E;
     border-radius: 8px;
@@ -43,6 +44,9 @@ nav li a {
     color: #424242;
     font-size: 1.25rem;
 }
+nav li a:hover{
+    border-bottom: 2px solid #7e7a7a;
+}
 
 .header-logo {
     font-size: 2.1rem;
@@ -59,47 +63,57 @@ nav li a {
 
 /* banner section */
 .banner-title {
-    color:  #131313;
+    color: #131313;
     font-size: 3.7rem;
     font-weight: 700;
 }
-.banner-discription{
+
+.banner-discription {
     color: #727272;
     font-size: 1rem;
     font-weight: 400;
     margin-top: 20px;
 }
-.banner-btn{
+
+.banner-btn {
     margin-top: 20px;
 }
-.banner-img{
+
+.banner-img {
     width: 100%;
     margin-top: 20px;
 }
+
 @media screen and (max-width: 576px) {
-    nav{
+    nav {
         flex-direction: column;
-        
+
     }
-    header{
+
+    header {
         padding: 10px;
     }
-    nav li{
+
+    nav li {
         margin-right: 20px;
         margin-top: 15px;
     }
+
     nav li a {
         font-size: 1rem;
     }
+
     .banner-title {
-        color:  #131313;
+        color: #131313;
         font-size: 3rem;
         font-weight: 700;
     }
-    .banner-discription{
+
+    .banner-discription {
         font-size: 0.9rem;
     }
-    .button-praimary{
+
+    .button-praimary {
         padding: 15px 18px;
         font-size: 1rem;
         font-weight: 300;
@@ -108,3 +122,62 @@ nav li a {
 
 }
 
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 30px;
+    }
+}
+
+/* main style */
+main {
+    max-width: 1435px;
+    margin: 0 auto;
+}
+
+.features-container {
+    display: flex;
+    align-items: center;
+}
+
+.features-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.features-text {
+    padding: 0 75px;
+}
+
+/* feature title design  */
+.quic-list {
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+.of-our {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.features-discription {
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 24px;
+}
+.features-btn{
+    margin-top: 32px;
+}
